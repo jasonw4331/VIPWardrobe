@@ -1,0 +1,59 @@
+name: VIPWardrobe
+main: jasonwynn10\VIPWardrobe\Main
+version: 0.1.0
+api:
+ - 3.0.0-ALPHA5
+author: "jasonwynn10"
+permissions:
+  wardrobe:
+    default: op
+    description: "Allows access to all wardrobe features"
+    children:
+      wardrobe.gui:
+        default: true
+        description: "Allows the player to open the gui and use all armor features within the gui"
+      wardrobe.armour:
+        default: op
+        description: "Gives the player all armor types"
+        children:
+          wardrobe.armour.leather:
+            default: true
+            description: "Gives the player the leather armor type"
+            children:
+              wardrobe.armour.leather.colored:
+                default: true
+                description: "Allows the user to equip colored leather armor"
+          wardrobe.armour.chain:
+            default: true
+            description: "Gives the player the chain armor type"
+          wardrobe.armour.iron:
+            default: true
+            description: "Gives the player the iron armor type"
+          wardrobe.armour.gold:
+            default: true
+            description: "Gives the player the gold armor type"
+          wardrobe.armour.diamond:
+            deafult: true
+            description: "Gives the player the diamond armor type"
+      wardrobe.heads:
+        default: true
+        description: "Allows the user to equip heads"
+      wardrobe.rainbow:
+        default: true
+        description: "Allows the user equip rainbow armor"
+      wardrobe.enchant:
+        default: true
+        description: "Allows the user enchant their armor"
+      wardrobe.sign:
+        default: op
+        description: "Allows creation and use of wardrobe signs"
+        children:
+          wardrobe.sign.make:
+            default: op
+            description: "Allows the user to make a wardrobe sign"
+          wardrobe.sign.tap:
+            default: true
+            description: "Allows use of wardrobe signs"
+      wardrobe.item.tap:
+        default: true
+        description: "Allows the user to open a wardrobe by tapping an item"
