@@ -258,7 +258,7 @@ class Main extends PluginBase {
 
 	// API
 
-	/**
+	/*
 	 * @param Player $owner
 	 *
 	 * @return DoubleChestInventory
